@@ -1,0 +1,10 @@
+app:
+  build: .
+  command: bundle exec middleman server
+  working_dir: /app
+  env_file: .env
+  user: "${UID}:${GID}"
+  volumes:
+    - .:/app
+  ports:
+    - "4567:4567"
