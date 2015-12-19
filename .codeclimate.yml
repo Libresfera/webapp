@@ -1,0 +1,31 @@
+---
+engines:
+  brakeman:
+    enabled: false
+  bundler-audit:
+    enabled: true
+  coffeelint:
+    enabled: true
+  eslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+  fixme:
+    enabled: true
+  scss-lint:
+    enabled: true
+  rubocop:
+    enabled: true
+ratings:
+  paths:
+  - "source/**/*"
+  - "**.scss"
+  - "**.coffee"
+  - "**.js"
+  - "**.rb"
+  - "**.haml"
+exclude_paths: []
