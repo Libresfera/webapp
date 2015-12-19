@@ -14,3 +14,7 @@ gem 'middleman-livereload'
 
 # Templating engine Haml
 gem 'haml'
+
+# Normalize styles across all browsers
+gem 'support-for', '~> 1.0'
+gem 'normalize-scss', '~> 4.0'
