@@ -1,12 +1,10 @@
 ---
 engines:
   brakeman:
-    enabled: false
+    enabled: true
   bundler-audit:
     enabled: true
   coffeelint:
-    enabled: true
-  eslint:
     enabled: true
   duplication:
     enabled: true
@@ -14,6 +12,8 @@ engines:
       languages:
       - ruby
       - javascript
+  eslint:
+    enabled: true
   fixme:
     enabled: true
   scss-lint:
@@ -22,10 +22,19 @@ engines:
     enabled: true
 ratings:
   paths:
-  - "source/**/*"
-  - "**.scss"
-  - "**.coffee"
-  - "**.js"
-  - "**.rb"
+  - "**.erb"
   - "**.haml"
-exclude_paths: []
+  - "**.rb"
+  - "**.rhtml"
+  - "**.slim"
+  - "**.css"
+  - "**.coffee"
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+exclude_paths:
+- db/**/*
+- vendor/**/*
