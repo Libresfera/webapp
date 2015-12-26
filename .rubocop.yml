@@ -1,0 +1,15 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'vendor/**/*'
+  RunRailsCops: true
+
+Style/Documentation:
+  Enabled: false
+
+StringLiterals:
+  EnforcedStyle: single_quotes
+
+Rubocop/Style/ClassAndModuleChildren:
+  Exclude:
+    - test/test_helper.rb
