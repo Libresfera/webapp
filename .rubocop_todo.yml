@@ -1,0 +1,9 @@
+Metrics/LineLength:
+  Exclude:
+    - 'config/initializers/request_forgery_protection.rb'
+    - 'config/environments/production.rb'
+
+Style/AndOr:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'

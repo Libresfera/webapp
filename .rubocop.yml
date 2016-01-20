@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   Exclude:
     - 'db/**/*'
@@ -6,6 +8,9 @@ AllCops:
 
 Style/Documentation:
   Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: leading
 
 StringLiterals:
   EnforcedStyle: single_quotes
